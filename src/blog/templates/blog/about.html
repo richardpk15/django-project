@@ -1,0 +1,9 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+{% load static %}
+<div class="content">
+    <h2>Sobre essa página</h2>
+    <p>Ela está sendo desenvolvida em Django para estudo.</p>
+    <img src="{% static 'blog/images/about.png' %}">
+</div>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'blog/style.css' %}">
+<link rel="stylesheet" href="{% static 'blog/form.css' %}">
+<link rel="stylesheet" href="{% static 'blog/table.css' %}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inicio</title>
+<body>
+
+<div class="header">
+    <h1>Site em Django</h1>
+</div>
+
+<div class="menu">
+    <ul>
+        <li><a href="{% url 'blog:index' %}">Inicio</a></li>
+        <li><a href="{% url 'blog:list' %}">Cadastros</a></li>
+        <li><a href="{% url 'blog:about' %}">Sobre</a></li>
+        <li><a href="{% url 'blog:contact' %}">Contato</a></li>
+
+    </ul>
+</div>
+
+{% block content %}
+
+{% endblock %}
+
+<div class="footer">
+    <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+</div>
+
+</body>
+</html>

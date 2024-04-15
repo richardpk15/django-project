@@ -1,0 +1,30 @@
+/* Estilos para a tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+/* Estilos para o cabeçalho da tabela */
+th {
+    background-color: #f2f2f2;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Estilos para as células da tabela */
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilos para as linhas pares da tabela */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para as células quando hover */
+td:hover {
+    background-color: #e6f7ff; /* Mudança de cor para um tom de azul claro */
+}
