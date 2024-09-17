@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "django-project"
+version = "0.1.0"
+description = ""
+authors = ["richardpk15 <138160715+richardpk15@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "django_project", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.0.4"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.0"
+isort = "^5.13.2"
+prospector = "^1.10.3"
+django-debug-toolbar = "^4.3.0"
+setuptools = "^69.5.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
